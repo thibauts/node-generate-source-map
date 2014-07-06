@@ -1,0 +1,25 @@
+{
+  "name": "generate-source-map",
+  "version": "0.0.1",
+  "description": "Generates an identity source-map from a javascript file",
+  "main": "index.js",
+  "dependencies": {
+    "source-map": "~0.1.34",
+    "esprima": "~1.2.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thibauts/node-generate-source-map.git"
+  },
+  "keywords": [
+    "source",
+    "map",
+    "sourcemap",
+    "generate"
+  ],
+  "author": "thibauts",
+  "license": "MIT"
+}
