@@ -4,11 +4,8 @@ var SourceMapGenerator = require('source-map').SourceMapGenerator;
 function generate(file) {
   var options = { 
     file: file.sourceFile 
+    sourceRoot: file.sourceRoot || ''
   };
-
-  if(file.sourceRoot) {
-    options.sourceRoot = file.sourceRoot;
-  }
 
   var map = new SourceMapGenerator(options);
   var tokens = esprima.tokenize(file.source, { loc: true });
