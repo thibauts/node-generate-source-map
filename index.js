@@ -3,7 +3,7 @@ var SourceMapGenerator = require('source-map').SourceMapGenerator;
 
 function generate(file) {
   var options = { 
-    file: file.sourceFile 
+    file: file.sourceFile,
     sourceRoot: file.sourceRoot || ''
   };
 
