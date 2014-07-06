@@ -14,7 +14,7 @@ function generate(file) {
     });
   });
 
-  return map;
+  return map.toJSON();
 }
 
 module.exports = generate;
